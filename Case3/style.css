@@ -1,3 +1,4 @@
+/* Общие стили для страницы */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f0f4f8;
@@ -5,18 +6,20 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
+/* Основной контейнер слайдера */
 .slider-container {
-  border: 2px solid #ccc;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  background: #ffffff;
-  text-align: center;
   width: 400px;
+  text-align: center;
 }
 
+/* Рамка для изображения */
 .slider-frame {
   width: 100%;
   height: 250px;
@@ -24,19 +27,22 @@ body {
   margin-bottom: 15px;
 }
 
+/* Изображение слайдера */
 .slider-frame img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* обрезка изображения по размеру контейнера */
   border-radius: 8px;
 }
 
+/* Контейнер для кнопок и счётчика */
 .slider-controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Кнопки "Назад" и "Вперёд" */
 .slider-controls button {
   padding: 10px 15px;
   font-size: 14px;
@@ -48,10 +54,12 @@ body {
   transition: background-color 0.3s ease;
 }
 
+/* Эффект наведения на кнопки */
 .slider-controls button:hover {
   background-color: #0d47a1;
 }
 
+/* Счётчик текущего изображения */
 #image-counter {
   font-weight: bold;
 }
